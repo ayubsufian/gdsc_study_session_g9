@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const GroupMembers = ({ members }) => {
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Group Members</h1>
+      <h1 className="text-xl font-bold mb-4">Group 9 Members</h1>
       <ul>
         {members.map((member, index) => (
           <li key={index} className="mb-2 text-blue-500">
