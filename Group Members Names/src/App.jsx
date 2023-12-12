@@ -2,14 +2,17 @@ import GroupMembers from "./GroupMembers";
 
 const App = () => {
   const groupMembers = [
+    "Ashenafi Pawlos",
+    "Atnasiya Abebe",
     "Ayub Sufian",
-    "Barok Teshome",
-    "Helen Firew",
-    "Kaleab Hailu",
-    "Mikias Nigussie",
-    "Natnael Petros",
-    "Yonas Ayenew",
-    "Zakaria Yunus",
+    "Beamlak Kagnew",
+    "Beamlak Solomon",
+    "Bezawit Abate",
+    "Betelhem Wondale",
+    "Betrearon Dereje",
+    "Abiy Haregot",
+    "Hanan Yesuf"
+    
   ];
 
   return (
