@@ -10,9 +10,11 @@ const Form = () => {
     country: "",
     terms: false,
   });
+  const [selectedCountry, setSelectedCountry] = useState("");
 
   const handleInputChange = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
+    setSelectedCountry(event.target.value);
   };
 
   const handleCheckboxChange = (event) => {
@@ -134,11 +136,12 @@ const Form = () => {
         <span>Country:</span>
         <select
           name="country"
+          value={selectedCountry}
           onChange={handleInputChange}
           className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm text-black"
           autoComplete="country-name"
         >
-          <option value="" disabled selected>
+          <option value="" disabled>
             Select your Country
           </option>
           <option value="United States">United States</option>
