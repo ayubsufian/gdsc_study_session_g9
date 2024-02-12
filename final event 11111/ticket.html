@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Buying</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    select {
+      appearance: none;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .notification {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="header">
+		<div>
+			<img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\llogo.jpg" width="5%" height="5%">
+		</div>
+		<div>
+			<a href="home.html">Home</a>
+      <a href="eventlist.html">Upcoming Events</a>
+      <a href="login.html">Register</a>
+      <a href="ticket.html">Buy Tickets</a>
+      <a href="gallary.html">Gallery</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="service.html">Our Services</a>
+			<a href="#cont">Contact Us</a>
+			
+		
+     
+		</div>
+	</div>
+
+
+
+
+  <div class="container">
+    <h1>Ticket Buying</h1>
+    <form onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="paypal">Cash On Delivery</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="payment-details">
+       
+      </div>
+
+
+      <div class="form-group">
+        <label for="payment">Type of event:</label>
+        <select id="payment" name="payment" required>
+          <option value="evventt">Select the Event</option>
+          <option value="networking">AWIB'S Networking Event</option>
+          <option value="networking">Fashion Show Event</option>
+          <option value="open">Open air Cinema</option>
+          <option value="hiking">Hiking to Wenchi Lake</option>
+          <option value="hiking1">Hiking to Bale Mountains</option>
+          <option value="hiking2">Hiking to Gheralata</option>
+          <option value="hiking3">Mount Furi</option>
+          
+        </select>
+      </div>
+
+
+
+      <div class="form-group">
+        <input type="submit" value="Buy Ticket">
+      </div>
+    </form>
+    <div id="notification" class="notification" style="display: none;"></div>
+  </div>
+  <div class="footer">
+    <div>
+      <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\llogo.jpg" width="5%" height="5%">
+    </div>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="C:\Users\arsem\OneDrive\Desktop\final event mangment\aboutus.html">About Us</a>
+      <a href="services.html">Our Service</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">register</a>
+      <a href="C:\Users\arsem\OneDrive\Desktop\event\gallery.html">Gallery</a>
+      <a href="eventlist.html">Upcoming Events</a>
+      
+    </div>
+    <div>
+        <p>&copy; 2023</p>
+    </div>
+    <div>
+      <p id="cont">contact us through<br>
+                  phone number:+251 936524174<br>
+                  phone number:+251 11745896<br>
+                 email:laylaevents@gmail.com;<br>
+                 facebook:@laylaevents<br>
+                 instagram:@Laylaevent<br>
+  
+  
+  
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var fname = document.getElementById("fname").value;
+      var lname = document.getElementById("lname").value;
+      var phone = document.getElementById("phone").value;
+      var payment = document.getElementById("payment").value;
+      
+      
+      if (fname === "" || lname === "" || phone === "" || payment === "") {
+        alert("Please fill in all required fields.");
+        return false;
+      }
+      
+      
+      var nameRegex = /^[A-Za-z]+$/;
+      if (!nameRegex.test(fname) || !nameRegex.test(lname)) {
+        alert("Please enter a valid first name and last name (without numbers).");
+        return false;
+      }
+      
+      
+      var phoneRegex = /^\d+$/;
+      if (!phoneRegex.test(phone)) {
+        alert("Please enter a valid phone number (numeric characters only).");
+        return false;
+      }
+      
+      
+      var notification = document.getElementById("notification");
+      notification.textContent = "Registered successfully!";
+      notification.style.display = "block";
+      
+      
+      document.getElementById("fname").value = "";
+      document.getElementById("lname").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("payment").value = "";
+      
+      return false; 
+    }
+      function handlePaymentMethodChange() {
+    var paymentMethod = document.getElementById("payment").value;
+    var paymentDetailsContainer = document.getElementById("payment-details");
+
+   
+    paymentDetailsContainer.innerHTML = "";
+
+    if (paymentMethod === "credit" || paymentMethod === "debit") {
+     
+      var cardNumberInput = document.createElement("input");
+      cardNumberInput.type = "text";
+      cardNumberInput.placeholder = "Card Number";
+      paymentDetailsContainer.appendChild(cardNumberInput);
+
+      var expirationInput = document.createElement("input");
+      expirationInput.type = "text";
+      expirationInput.placeholder = "Expiration Date";
+      paymentDetailsContainer.appendChild(expirationInput);
+
+      var cvvInput = document.createElement("input");
+      cvvInput.type = "text";
+      cvvInput.placeholder = "CVV";
+      paymentDetailsContainer.appendChild(cvvInput);
+    }
+    
+  }
+
+  
+  var paymentMethodSelect = document.getElementById("payment");
+  paymentMethodSelect.addEventListener("change", handlePaymentMethodChange);
+    
+  </script>
+</body>
+</html>

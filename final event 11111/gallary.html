@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <style>
+.gallery-heading {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.gallery-heading:hover {
+  color: blue; 
+}
+
+.gallery-heading::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: blue; /r ** Initial line colo/
+  transition: width 0.3s;
+}
+
+.gallery-heading:hover::after {
+  width: 100%; /* Extend the line on hover */
+}
+    
+body, figure, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+.gaall{
+  height:10vh;
+}
+
+.gallery {
+  padding-bottom: 400px;
+  padding: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
+  </style>
+  
+</head>
+<body>
+    <div class="header">
+		<div>
+			<img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\llogo.jpg" width="5%" height="5%">
+		</div>
+		<div>
+			<a href="home.html">Home</a>
+      <a href="eventlist.html">Upcoming Events</a>
+      <a href="login.html">Register</a>
+      <a href="ticket.html">Buy Tickets </a>
+      <a href="gallary.html">Gallery</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="service.html">Our Services</a>
+			<a href="#cont">Contact Us</a>
+
+			
+		
+     
+		</div>
+	</div>
+    <div class="gaall">
+        <h1 style="text-align: center;" class="gallery-heading">Dive Into Our Most Memorable Moments </h1>
+
+    </div>
+  <section class="gallery">
+
+    <div class="gallery-item">
+      <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\g1.jpg" alt="Event 1">
+      <div class="overlay">
+        <h3>Time less beauty</h3>
+        <p>One of our best clients </p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\g2.jpg" alt="Event 2">
+      <div class="overlay">
+        <h3>Our event with the most attendees</h3>
+        <p>Produced by Lambros Yokaris.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\g4.jpg" alt="Event 3">
+      <div class="overlay">
+        <h3>Pop Up Event</h3>
+        <p>Best Pop-up event so far</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\g5.jpg" alt="Event 4">
+      <div class="overlay">
+        <h3>New Year's Eve </h3>
+        <p>The most anticipated event by the one and only Sheraton.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+        <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\g6.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Beauty Pagent</h3>
+          <p>Our Exclusive global client.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\gg.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Kids Event</h3>
+          <p>Mind and soul nurturing.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="teddy.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Teddy Afro Concert</h3>
+          <p>The Most Delightful event</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="vver.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Veronica's performance</h3>
+          <p>As usual Veronica's performance.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="ggg.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Hub of AFRICA Addis</h3>
+          <p>The most liked event of the month.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="wine.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Wine</h3>
+          <p>Such a divine test.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="epp.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Ephiphany</h3>
+          <p> The most Spirtual event.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="beauti.jpg" alt="Event 4">
+        <div class="overlay">
+          <h3>Hiking </h3>
+          <p>The most beautiful view.</p>
+        </div>
+      </div>
+      
+    
+
+        
+      </div>
+    </section>
+
+
+
+
+        <div class="footer">
+            <div>
+                <img src="C:\Users\arsem\OneDrive\Desktop\final event mangment\llogo.jpg" width="5%" height="5%">
+            </div>
+            <div>
+              <a href="home.html">Home</a>
+              <a href="eventlist.html">Upcoming Events</a>
+              <a href="login.html">Register</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="services.html">Our Service</a>
+              <a href="gallary.html">Gallery</a>
+              
+            </div>
+            <div>
+                <p>&copy; 2023</p>
+            </div>
+            <div>
+              <p id="cont">Contact us through<br>
+                          phone number:+251 936524174<br>
+                          phone number:+251 11745896<br>
+                          email:laylaevents@gmail.com;<br>
+                          facebook:@laylaevents<br>
+                          instagram:@Laylaevent<br>
+        
+        
+        
+              </p>
+            </div>
+          </div>    
+  
+ 
+</body>
+</html>

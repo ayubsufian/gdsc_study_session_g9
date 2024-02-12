@@ -1,0 +1,50 @@
+
+  
+  
+  
+
+  
+ 
+  .Part-2 {
+    display: flex;
+    background-color: aliceblue;
+  }
+  
+  .aboutEth {
+    flex: 1;
+  }
+  
+  .collage1 {
+    width: 400px; 
+    height: auto;
+  }
+  
+  .description {
+    flex: 1;
+    padding-left: 20px; 
+    text-align: left; 
+  }
+  .featured-events {
+    display: flex;
+    background-color: rgb(190, 190, 248);
+  }
+  
+  .event {
+    flex: 1;
+    padding: 70px;
+    text-align: center;
+  }
+  
+  
+  .event img:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+  }
+  
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 244, 249);
+    padding: 20px;
+  }
