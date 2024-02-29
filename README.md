@@ -26,4 +26,4 @@ Each session task project is organized in its designated directory within the re
 
 Class Tasks
 
-In addition to session tasks, this repository includes class tasks. These tasks are documented separately, providing a comprehensive overview of the coursework
+In addition to session tasks, this repository includes class tasks. These tasks are documented separately, providing a comprehensive overview of the coursework.
