@@ -1,10 +1,10 @@
 # gdsc_study_session_g9
 
-# Overview
+## Overview
 
 This repository encompasses 8 session tasks and class tasks developed over the span of 8 weeks, commencing from month 1 week 1 and concluding in month 2 week 4.
 
-Session Tasks
+## Session Tasks
 
 Each session task project is organized in its designated directory within the repository. The projects are categorized by the respective week they were undertaken:
 
@@ -24,6 +24,6 @@ Each session task project is organized in its designated directory within the re
 
 8. Month 2 Week 4 | About Me Page
 
-Class Tasks
+## Class Tasks
 
 In addition to session tasks, this repository includes class tasks. These tasks are documented separately, providing a comprehensive overview of the coursework.
