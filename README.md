@@ -8,21 +8,21 @@ Session Tasks
 
 Each session task project is organized in its designated directory within the repository. The projects are categorized by the respective week they were undertaken:
 
-1. Month 1 Week 1
+1. Month 1 Week 1 | First Git Contribution
  
-2. Month 1 Week 2
+2. Month 1 Week 2 | BMI Calculator
 
-3. Month 1 Week 3
+3. Month 1 Week 3 | To-Do List
 
-4. Month 1 Week 4
+4. Month 1 Week 4 | Group Members Names
 
-5. Month 2 Week 1
+5. Month 2 Week 1 | Advanced-To-Do List App
 
-6. Month 2 Week 2
+6. Month 2 Week 2 | Shopping Cart
 
-7. Month 2 Week 3
+7. Month 2 Week 3 | React Router E-Commerce Website
 
-8. Month 2 Week 4
+8. Month 2 Week 4 | About Me Page
 
 Class Tasks
 
