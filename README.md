@@ -24,3 +24,6 @@ Each session task project is organized in its designated directory within the re
 
 8. Month 2 Week 4
 
+Class Tasks
+
+In addition to session tasks, this repository includes class tasks. These tasks are documented separately, providing a comprehensive overview of the coursework
