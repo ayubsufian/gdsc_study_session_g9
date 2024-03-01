@@ -145,6 +145,7 @@ const App = () => {
           </h1>
         </div>
         <Navbar />
+        <img src="/images/electronicHomeAppliances.png" alt="Electronic Home Appliances" className="w-full"/>
         <div className="container mx-auto p-4">
           <Routes>
             <Route path="/" element={<Home products={products} />} />
